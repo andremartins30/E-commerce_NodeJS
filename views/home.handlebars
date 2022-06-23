@@ -1,0 +1,13 @@
+<h1>Confira nossos sistemas</h1>
+{{#each products}}
+    <div>
+        <div class="container">
+            <img src={{this.img}}>
+        </div>
+
+        <h3>{{this.title}}</h3>
+        <p>R${{this.price}}</p>
+        <p><a href="/product/{{this.id}}">Ver mais</a></p>
+    </div>
+
+{{/each}}
